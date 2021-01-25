@@ -3,9 +3,9 @@ import java.io.*;
 class Remove_Replace_text{
 	public static void main(String []args){
 		if(args.length < 2){
-			System.out.println("Usage: java Remove_text FileName OldStr NewStr");
+			System.out.println("Usage: java Remove_Replace_text FileName OldStr NewStr");
 			System.out.println("                      or                    ");
-			System.out.println("Usage: java Remove_text FileName RemoveStr");
+			System.out.println("Usage: java Remove_Replace_text FileName RemoveStr");
 			System.exit(1);
 		}
 		File file = new File(args[0]);
