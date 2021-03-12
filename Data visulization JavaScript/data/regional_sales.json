@@ -1,0 +1,30 @@
+{
+  "sales": {
+    "region": [
+      {
+        "year": "2013",
+        "territory": "Northeast",
+        "employees": "150",
+        "amount": "115,000"
+      },
+      {
+        "year": "2013",
+        "territory": "Southeast",
+        "employees": "125",
+        "amount": "95,000"
+      },
+      {
+        "year": "2013",
+        "territory": "Midwest",
+        "employees": "225",
+        "amount": "195,000"
+      },
+      {
+        "year": "2013",
+        "territory": "West",
+        "employees": "325",
+        "amount": "265,000"
+      }
+    ]
+  }
+}
