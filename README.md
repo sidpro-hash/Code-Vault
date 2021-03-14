@@ -13,6 +13,8 @@
 3. [Write an application to update content of table. Get values from key board.(Use **parameterized query**)](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Update_Table.java)
 4. [Using the JDBC API, display all the records from the database table, Table selected from command line argument.](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Display_Table.java)
 5. [Write a Java application to invoke a stored procedure using a **CallableStatement**. For this a stored procedure called incrementSalary may be developed to increase all the employee’s salary by a percentage specified in the parameter](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Emp_Salary.java)
+6. [Using **JDBC Type-1 Driver**, display all the records from the database table.](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Demo1.java)
+    * [Create JDBC-ODBC Data Source for Oracle.](https://collegeek.com/How_To/Oracle_database_type1_JDBC.html)
 
 ### Socket Programming in JAVA
 
