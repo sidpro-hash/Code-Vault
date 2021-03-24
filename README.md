@@ -6,6 +6,16 @@
 
 ![Apriori output](/images/Apriori.png)
 
+### JDBC Programs (Oracle 11g database)
+
+1. [Create an application to fill student registration form and submit data into table of Oracle. (use JDBC)](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Student_Reg.java)
+2. [Write an application which list content of table of a database. (**Describe Table**)](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Table_content.java)
+3. [Write an application to update content of table. Get values from key board.(Use **parameterized query**)](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Update_Table.java)
+4. [Using the JDBC API, display all the records from the database table, Table selected from command line argument.](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Display_Table.java)
+5. [Write a Java application to invoke a stored procedure using a **CallableStatement**. For this a stored procedure called incrementSalary may be developed to increase all the employee’s salary by a percentage specified in the parameter](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Emp_Salary.java)
+6. [Using **JDBC Type-1 Driver**, display all the records from the database table.](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Demo1.java)
+    * [Create JDBC-ODBC Data Source for Oracle.](https://collegeek.com/How_To/Oracle_database_type1_JDBC.html)
+
 ### Java Servlet
 
 1. Develop Server Side Application using servlet for Collecting employee information, Validation employee information and Retrieval of employees records. Develop 3 separate servlets for collection, validation and for retrieval.
@@ -16,17 +26,7 @@
    * [Client Side Web base form for Collecting Employee Information](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Servlet/Sidpro/client_side.html)
    * [Servlet for Validating employee information](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Servlet/Sidpro/WEB-INF/classes/Client_side_validate.java)
    * [Servlet for Retrieval of employees Records](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Servlet/Sidpro/WEB-INF/classes/Display_Info.java)
-4. For above application implement a login page. A user can use above pages only after login using correct userID and password. Implement logout facility also. Do session tracking.
-
-### JDBC Programs (Oracle 11g database)
-
-1. [Create an application to fill student registration form and submit data into table of Oracle. (use JDBC)](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Student_Reg.java)
-2. [Write an application which list content of table of a database. (**Describe Table**)](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Table_content.java)
-3. [Write an application to update content of table. Get values from key board.(Use **parameterized query**)](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Update_Table.java)
-4. [Using the JDBC API, display all the records from the database table, Table selected from command line argument.](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Display_Table.java)
-5. [Write a Java application to invoke a stored procedure using a **CallableStatement**. For this a stored procedure called incrementSalary may be developed to increase all the employee’s salary by a percentage specified in the parameter](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Emp_Salary.java)
-6. [Using **JDBC Type-1 Driver**, display all the records from the database table.](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Demo1.java)
-    * [Create JDBC-ODBC Data Source for Oracle.](https://collegeek.com/How_To/Oracle_database_type1_JDBC.html)
+3. For above application implement a login page. A user can use above pages only after login using correct userID and password. Implement logout facility also. Do session tracking.
 
 ### Socket Programming in JAVA
 
