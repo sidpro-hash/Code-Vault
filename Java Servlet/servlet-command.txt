@@ -4,7 +4,7 @@ java -cp E:\xampp\tomcat\lib\servlet-api.jar;F:\SOFT\ORaclE\app\oracle\product\1
 
 
 
-a) Develop server side application using servlet for collecting employee information, validation the existing record of employee and retrieval of employees records. Develop 3 separate servlets for collection, validation and for retrieval.
-b) Develop  a client side web base form or applet for the server side employee information as in a).
+a) Develop server side application using servlet for collecting employee information, validation employee information and retrieval of employees records. Develop 3 separate servlets for collection, validation and for retrieval.
+b) Develop a client side web base form for collecting employee information and servlet for validation employee information and retrieval of employees records.Develop 2 separate servlets for validation and for retrieval.
 
-2)For above application implement a login page. A user can use above pages only after login using correct userID and password. Implement logout facility also. Do session tracking using any one of the four methods discussed in class.
+2)For above application implement a login page. A user can use above pages only after login using correct userID and password. Implement logout facility also. Do session tracking.
