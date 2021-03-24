@@ -13,7 +13,10 @@
    * [Servlet for Validating employee information](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Servlet/Sidpro/WEB-INF/classes/Validation_Info.java)
    * [Servlet for Retrieval of employees Records](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Servlet/Sidpro/WEB-INF/classes/Display_Info.java)
 2. Develop a client side web base form for collecting employee information and servlet for validation employee information and retrieval of employees records.Develop 2 separate servlets for validation and for retrieval.
-3. 
+   * [Client Side Web base form for Collecting Employee Information](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Servlet/Sidpro/client_side.html)
+   * [Servlet for Validating employee information](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Servlet/Sidpro/WEB-INF/classes/Client_side_validate.java)
+   * [Servlet for Retrieval of employees Records](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Servlet/Sidpro/WEB-INF/classes/Display_Info.java)
+4. For above application implement a login page. A user can use above pages only after login using correct userID and password. Implement logout facility also. Do session tracking.
 
 ### JDBC Programs (Oracle 11g database)
 
