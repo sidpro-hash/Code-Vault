@@ -1,0 +1,125 @@
+		 <!DOCTYPE html> 
+		 <html> 
+		
+		 <head> 
+			 <title> Servlet By Sid </title> 
+			 <meta charset="utf-8"> 
+			 <meta name="author" content="SidPro"/> 
+			 <meta name="viewport" content="width=device-width,initial-scale=1"> 
+			 <link type="text/css" rel="stylesheet" href="Collect_Info.css"> 
+			 <style>
+			   input[type="button"]{
+				padding: 10px 14px;
+				margin: 8px 4px;
+				display:inline-block;
+				width:48%;
+				font-size: 16px;
+				color:white;
+				font-weight: bold;
+			  }
+			  
+			  input[type="button"]{
+				border:2px solid rgb(20, 100, 4);
+				color:rgb(20, 100, 4);
+				background-color: white;
+			  }
+			  input[type="button"]:hover{
+				background-color: rgb(20, 100, 4);
+				cursor: pointer;
+				color:white;
+			  }
+			  @media only screen and (max-width:600px) {
+				input[type="button"]{
+				  width: 100%;
+				  padding: 6px 8px;
+				  margin: 6px 2px;
+				  border-radius: 5px;
+				}
+			  }
+			 </style>
+		 </head> 
+		
+		 <body> 
+			
+			<h2>Collecting Client Side Employee information Of Collegeek</h2> 
+			
+		 <form method="post" class="main_container"> 
+		 <div class="containerbase"> 
+			 <lable id="F" for="firstname">Enter First Name :</lable><br> 
+			 <input type="text" name="fname" id="firstname" placeholder="Enter your first name here"><br> 
+			 <lable id="L" for="lastname">Enter Last Name :</lable><br> 
+			 <input type="text" name="lname" id="lastname" placeholder="Enter your last name here"><br> 
+			 <lable id="E" for="Email">Enter Email:</lable><br> 
+			 <input type="email" name="email" id="Email" placeholder="Enter your email address here"><br> 
+			 <lable for="exp">Employee experience: </lable> 
+			 <select name="exp" id="exp"> 
+				 <option value="1">1</option> 
+				 <option value="2">2</option> 
+				 <option value="3">3</option> 
+				 <option value="4" selected>4</option> 
+				 <option value="5">5</option> 
+				 <option value="6">6</option> 
+				 <option value="7">7</option> 
+				 <option value="8">8</option> 
+			 </select><br> 
+			 <lable>Select Gender:</lable><br> 
+			 <input type="radio" name="gender" value="Male" checked>Male 
+			 <input type="radio" name="gender" value="Female">Female 
+			 <input type="radio" name="gender" value="other">other<br> 
+
+			 <lable id="P" for="Pass">Enter Password:</lable><br> 
+			 <input type="password" name="pass" id="Pass" placeholder="Enter your password here"><br> 
+			 <div class="container"> 
+			 <input type="button" value="Submit" onclick="sendData()"><input type="reset" value="Reset"> 
+			 </div> 
+		 </div> 
+		 </form> 
+ 
+		 <section> 
+			 <div class="wave wave1"></div> 
+			 <div class="wave wave2"></div> 
+			 <div class="wave wave3"></div> 
+		 </section> 
+		 </body> 
+		 <script>
+		 function sendData(){
+
+			var fname = document.getElementById('firstname').value;
+			var lname = document.getElementById('lastname').value;
+			var email = document.getElementById('Email').value;
+			var exp = document.getElementById('exp').value;
+			var gender = document.querySelector('input[name=gender]:checked').value;
+			var pass = document.getElementById('Pass').value;
+
+			var Data = "?fname="+encodeURIComponent(fname)
+						+"&lname="+encodeURIComponent(lname)
+						+"&email="+encodeURIComponent(email)
+						+"&exp="+encodeURIComponent(exp)
+						+"&gender="+encodeURIComponent(gender)
+						+"&pass="+encodeURIComponent(pass);
+						
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.responseType = 'json';
+			xmlhttp.onreadystatechange = function() {
+				
+				if(this.readyState == 4 && this.status == 200) {
+					
+					console.log(this.response);
+					var arr = this.response;
+					if(arr==null){
+						console.log("heheh");
+						window.location='Display_Info';
+					}
+					document.getElementById('F').innerHTML= "Enter First Name :<span style='color:red'>"+arr[0].fname_error+"</span>";
+					document.getElementById('L').innerHTML= "Enter Last Name :<span style='color:red'>"+arr[1].lname_error+"</span>";
+					document.getElementById('P').innerHTML= "Enter Password:<span style='color:red'>"+arr[2].pass_error+"</span>";
+					document.getElementById('E').innerHTML= "Enter Email:<span style='color:red'>"+arr[3].email_error+"</span>";
+				}
+			};
+			  xmlhttp.open("POST", "Client_side_validate"+Data, true);
+			  xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded' );
+			  xmlhttp.send();
+		}
+    
+		 </script>
+		 </html> 
