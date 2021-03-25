@@ -19,6 +19,31 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.PreparedStatement;
 
+
+/**
+*
+* A class retrieving an employee information.
+* simply displays all employee records as table row.
+* employee information includes:
+* <ul>
+* <li>Firstname
+* <li>Lastname
+* <li>Email
+* <li>Gender
+* <li>Password
+* <li>Years of Experience
+* </ul>
+* 
+*
+*
+* @author  Siddharth Gabu
+* @version 1.0
+* @since   2021-03-25
+*
+*
+*/
+
+
 // First method of creating servlet
 public class Display_Info extends HttpServlet{
 	private String message;

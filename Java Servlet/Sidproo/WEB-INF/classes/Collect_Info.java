@@ -1,4 +1,6 @@
 
+
+
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -8,6 +10,32 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.RequestDispatcher;
+
+
+/**
+*
+* A class collecting an employee information.
+* simple employee Registration form
+* employee information includes:
+* <ul>
+* <li>Firstname
+* <li>Lastname
+* <li>Email
+* <li>Gender
+* <li>Password
+* <li>Years of Experience
+* </ul>
+* All information is being sended to class Validation_info
+*
+*
+* @author  Siddharth Gabu
+* @version 1.0
+* @since   2021-03-25
+*
+*
+*/
+
+
 
 // First method of creating servlet
 public class Collect_Info extends HttpServlet{
@@ -20,8 +48,19 @@ public class Collect_Info extends HttpServlet{
 	public void service(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
+		
 		//String ppath = request.getContextPath();
 		String fname ="",lname="",pass="",email=""; 
+		
+		/**
+		 * Returns the value of the specified attribute.
+		 *
+		 * @param     attributeName  the name of the desired attribute.
+		 * @return    the desired attribute value.
+		 * @exception NullPointerException
+		 *              
+		 * @see       javax.servlet.http.HttpServletRequest#getAttribute(String)
+		 */
 		if(request.getAttribute("fname_error")!=null){
 			fname=(String)request.getAttribute("fname_error");
 			request.removeAttribute("fname_error");

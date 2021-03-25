@@ -18,7 +18,23 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-
+/**
+*
+* A class validating an employee Login.
+* employee Login information includes:
+* <ul>
+* <li>Firstname : must be valid name
+* <li>Password	: must be valid pass
+* </ul>
+* For valid login it generates session.
+*
+*
+* @author  Siddharth Gabu
+* @version 1.0
+* @since   2021-03-25
+*
+*
+*/
 
 // First method of creating servlet
 public class Validation_Login extends HttpServlet{

@@ -10,6 +10,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.RequestDispatcher;
 
+/**
+*
+* A class for Logout.
+* Simply it destroy a session.
+*
+*
+* @author  Siddharth Gabu
+* @version 1.0
+* @since   2021-03-25
+*
+*
+*/
+
+
 // First method of creating servlet
 public class Logout extends HttpServlet{
 	private String message;

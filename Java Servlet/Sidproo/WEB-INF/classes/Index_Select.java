@@ -10,6 +10,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.RequestDispatcher;
 
+/**
+*
+* A class for to choice.
+* 1. Registration
+* 2. Information retrival
+* After successful login Employee comes here.
+* Without Login It will Redirect to class Login
+* 
+* @author  Siddharth Gabu
+* @version 1.0
+* @since   2021-03-25
+*
+*
+*/
+
 // First method of creating servlet
 public class Index_Select extends HttpServlet{
 	private String message;

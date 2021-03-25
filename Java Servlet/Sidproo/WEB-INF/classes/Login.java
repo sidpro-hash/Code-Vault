@@ -9,6 +9,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.RequestDispatcher;
 
+/**
+*
+* A class for Login.
+* It takes two input firstname and password
+* After successful login Employee redirects to 
+* class Index_Select
+* 
+*
+* @author  Siddharth Gabu
+* @version 1.0
+* @since   2021-03-25
+*
+*
+*/
+
+
 // First method of creating servlet
 public class Login extends HttpServlet{
 	private String message;

@@ -18,6 +18,27 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.PreparedStatement;
 
+/**
+*
+* A class validating an employee information.
+* employee information includes:
+* <ul>
+* <li>Firstname : must be alphabet
+* <li>Lastname  : must be alphabet
+* <li>Email		: valid email
+* <li>Gender
+* <li>Password	: length > 8
+* <li>Years of Experience
+* </ul>
+* 
+*
+*
+* @author  Siddharth Gabu
+* @version 1.0
+* @since   2021-03-25
+*
+*
+*/
 
 // First method of creating servlet
 public class Validation_Info extends HttpServlet{
