@@ -5,9 +5,11 @@
 1. [Cyclic Redundancy Check (CRC)](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/CRCparity.cpp)
 2. [Hamming code detecting up to two simultaneous bit errors and correcting single-bit errors.](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/HammingCode.cpp)
 3. [Two-dimensional Parity check](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/parity.cpp)
-4. []()
-5. []()
-6. [C++ Implementation of Apriori Algorithm](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Apriori/apriori.cpp)
+4. [Rod cutting problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Rodcut.cpp)
+5. [Coin change problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Coinchange.cpp)
+6. [0-1 Knapsack Problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Knapsack_01.cpp)
+7. [Fractional Knapsack Problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Knapsack_Fractional.cpp)
+8. [C++ Implementation of Apriori Algorithm](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Apriori/apriori.cpp)
 
 ![Apriori output](/images/Apriori.png)
 
