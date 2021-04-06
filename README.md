@@ -2,7 +2,12 @@
 
 ### C++
 
-1. [C++ Implementation of Apriori Algorithm](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Apriori/apriori.cpp)
+1. [Cyclic Redundancy Check (CRC)](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/CRCparity.cpp)
+2. [Hamming code detecting up to two simultaneous bit errors and correcting single-bit errors.](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/HammingCode.cpp)
+3. [Two-dimensional Parity check](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/parity.cpp)
+4. []()
+5. []()
+6. [C++ Implementation of Apriori Algorithm](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Apriori/apriori.cpp)
 
 ![Apriori output](/images/Apriori.png)
 
