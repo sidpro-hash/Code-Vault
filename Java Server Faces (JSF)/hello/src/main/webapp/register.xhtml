@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f = "http://java.sun.com/jsf/core">
+<head>
+  <title>Register - JSF By SidPro</title>
+  <meta name="author" content="SidPro"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link href="/hello/resources/css/Collect_Info.css" rel="stylesheet" /> 
+  <style>
+	.error{color:red}  
+  </style>
+</head>
+
+<body>
+<h2 style="text-align:center">Registration form</h2>
+	<h:form method="post"  class="main_container">
+		<div class="containerbase"> 
+			 
+			 <h:outputLabel for="firstname">Enter First Name :</h:outputLabel>
+			 <h:message for = "firstname" style = "color:red" /><br/>
+			 <h:inputText type="text" value="#{student.firstName}" name="firstName" id="firstname" a:placeholder="Enter your first name here" required="true" requiredMessage="This field is required"/><br/>
+			 <h:outputLabel for="lastname">Enter Last Name :</h:outputLabel>
+			 <h:message for = "lastname" style = "color:red" /><br/>
+			 <h:inputText type="text" value="#{student.lastName}" name="lastName" id="lastname" a:placeholder="Enter your last name here" required="true" requiredMessage="This field is required"/><br/>
+			 <h:outputLabel for="enNo">Enter Enrollment no :</h:outputLabel>
+			 <h:message for = "enNo" style = "color:red" /><br/>
+			 <h:inputText type="text" value="#{student.enNo}" name="enNo" id="enNo" a:placeholder="Enter your Enrollment no here" required="true" requiredMessage="This field is required"/><br/>
+			 <h:outputLabel>Select Gender:</h:outputLabel><br/>
+			 <h:selectOneRadio value="#{student.gender}"> 
+			   <f:selectItem itemValue = "Male" itemLabel = "Male" checked="true" /> 
+			   <f:selectItem itemValue = "Female" itemLabel = "Female" />
+			   <f:selectItem itemValue = "Other" itemLabel = "Other" />
+			</h:selectOneRadio> <br/> 
+
+			 <h:outputLabel for="Pass">Enter Password:</h:outputLabel>
+			 <h:message for = "Pass" style = "color:red" /><br/>
+			 <h:inputSecret type="password" value="#{student.password}" name="password" id="Pass" a:placeholder="Enter your password here" required="true" requiredMessage="This field is required">
+			 	<f:validateLength minimum = "8" maximum = "14" />
+			 </h:inputSecret> <br/>
+			 <div class="container"> 
+			 	<h:commandButton action="#{student.submit()}" type="submit" value="Submit" />
+			 	<h:commandButton type="reset" value="Reset" />
+			 </div> 
+		 </div> 
+	</h:form>
+</body>
+
+</html>

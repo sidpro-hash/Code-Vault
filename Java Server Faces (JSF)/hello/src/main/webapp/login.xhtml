@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f = "http://java.sun.com/jsf/core">
+<head>
+  <title>Login - JSF By SidPro</title>
+  <meta name="author" content="SidPro"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link href="/hello/resources/css/Login.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="login"> 
+	 <h1>Login</h1> 
+	 <h:form method="post">
+	 	<h:message for = "Pass" style="color:#f24835" /><br/>
+	 	<h:inputText type="text" value="#{student.firstName}" name="firstName" id="firstname" a:placeholder="Username" required="true" requiredMessage="Username Or Password is Wrong !"/><br/>
+		<h:inputSecret type="password" value="#{student.password}" name="password" id="Pass" a:placeholder="Password" required="true" requiredMessage="Username Or Password is Wrong !"/><br/>
+		 <h:commandButton action="#{student.check()}" type="submit" value="Let me in." class="btn btn-primary btn-block btn-large"/>
+		 <p>Don't have an account? <a href="register.xhtml" target="_self">Sing up here!</a></p>
+	 </h:form>
+</div>
+</body>
+
+</html>

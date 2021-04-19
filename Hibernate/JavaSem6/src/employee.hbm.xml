@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 5.3//EN" "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+<hibernate-mapping>  
+  <class name="javasem6.Employee" table="emp10000">  
+    <id name="emp_id" column="emp_id">  
+     <generator class="assigned"></generator>  
+    </id>  
+     <!-- In the absence of a column attribute, Hibernate uses the property name as the column name. -->       
+    <property name="emp_name"></property>  
+    <property name="job_name"></property>  
+    <property name="salary"></property>        
+  </class>  
+</hibernate-mapping> 

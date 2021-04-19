@@ -1,0 +1,69 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>Display_Info</servlet-name>
+		<servlet-class>Display_Info</servlet-class>
+		
+		<init-param>  
+			<param-name>classname</param-name>  
+			<param-value>oracle.jdbc.driver.OracleDriver</param-value>  
+		</init-param>
+		<init-param>  
+			<param-name>url</param-name>  
+			<param-value>jdbc:oracle:thin:@localhost:1521:XE</param-value>  
+		</init-param>
+		<init-param>  
+			<param-name>username</param-name>  
+			<param-value>admin</param-value>  
+		</init-param>
+		<init-param>  
+			<param-name>password</param-name>  
+			<param-value>admin</param-value>  
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<servlet-name>validate_user</servlet-name>
+		<jsp-file>/validate_user.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>validate_Login</servlet-name>
+		<jsp-file>/validate_login.jsp</jsp-file>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>validate_user</servlet-name>
+		<url-pattern>/validate_user</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>validate_Login</servlet-name>
+		<url-pattern>/validate_Login</url-pattern>
+	</servlet-mapping>
+	
+		<context-param>  
+			<param-name>classname</param-name>  
+			<param-value>oracle.jdbc.driver.OracleDriver</param-value>  
+		</context-param>
+		<context-param>  
+			<param-name>url</param-name>  
+			<param-value>jdbc:oracle:thin:@localhost:1521:XE</param-value>  
+		</context-param>
+		<context-param>  
+			<param-name>username</param-name>  
+			<param-value>admin</param-value>  
+		</context-param>
+		<context-param>  
+			<param-name>password</param-name>  
+			<param-value>admin</param-value>  
+		</context-param>
+	
+	<welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.xhtml</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+		<welcome-file>home.html</welcome-file>  
+		<welcome-file>default.html</welcome-file> 
+    </welcome-file-list>
+	
+</web-app>

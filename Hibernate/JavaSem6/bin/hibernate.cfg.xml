@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">    
+      
+    <hibernate-configuration>  
+      
+        <session-factory>  
+			<!-- Update the exisiting tables -->
+			<!-- prperty valuse can be: create,create-drop,update,validate -->
+            <property name="hbm2ddl.auto">update</property>  
+			<!-- Oracle dialect -->
+            <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>  
+			<!-- Database connection settings -->
+			<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+            <property name="connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>  
+            <property name="connection.username">admin</property>  
+            <property name="connection.password">admin</property>  
+            
+			<!-- Echo all executed SQL to stdout -->
+			<property name="show_sql">false</property>
+			
+			<mapping resource="employee.hbm.xml"/>  
+        </session-factory>  
+      
+    </hibernate-configuration>

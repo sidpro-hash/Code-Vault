@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f = "http://java.sun.com/jsf/core">
+<head>
+  <title>Marks - JSF By SidPro</title>
+  <meta name="author" content="SidPro"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link href="/hello/resources/css/Collect_Info.css" rel="stylesheet" />
+</head>
+
+<body>
+<h2 style="text-align:center">Marks Collection</h2>
+<h:form method="post"  class="main_container">
+		<div class="containerbase"> 
+			 
+			 <h:outputLabel for="ADJ">Enter Mark of Subject 1 :</h:outputLabel>
+			 <h:message for = "ADJ" style = "color:red" /><br/>
+			 <h:inputText type="number" value="#{marks.ADJ}" name="ADJ" id="ADJ" a:placeholder="Enter Mark of Advance Java Programming" min="0" max="100" required="true" requiredMessage="This field is required"/><br/>
+			 <h:outputLabel for="DM">Enter Mark of Subject 2 :</h:outputLabel>
+			 <h:message for = "DM" style = "color:red" /><br/>
+			 <h:inputText type="number" value="#{marks.DM}" name="DM" id="DM" a:placeholder="Enter Mark of Data mining" min="0" max="100" required="true" requiredMessage="This field is required"/><br/>
+			 <h:outputLabel for="TOC">Enter Mark of Subject 3 :</h:outputLabel>
+			 <h:message for = "TOC" style = "color:red" /><br/>
+			 <h:inputText type="number" value="#{marks.TOC}" name="TOC" id="TOC" a:placeholder="Enter Mark of Theory of Computation" min="0" max="100" required="true" requiredMessage="This field is required"/><br/>
+			 <h:outputLabel for="MPI">Enter Mark of Subject 4 :</h:outputLabel>
+			 <h:message for = "MPI" style = "color:red" /><br/>
+			 <h:inputText type="number" value="#{marks.MPI}" name="MPI" id="MPI" a:placeholder="Enter Mark of Microprocessor and Interfacing" min="0" max="100" required="true" requiredMessage="This field is required"/><br/>
+			 <h:outputLabel for="DV">Enter Mark of Subject 5 :</h:outputLabel>
+			 <h:message for = "DV" style = "color:red" /><br/>
+			 <h:inputText type="number" value="#{marks.DV}" name="DV" id="DV" a:placeholder="Enter Mark of Data visualization" min="0" max="100" required="true" requiredMessage="This field is required"/><br/>
+			 
+			 <h:inputHidden value="#{marks.marDM}" type="text" name="MarDM" id="MarDM" />
+			 <h:inputHidden value="#{marks.marDV}" type="text" name="MarDV" id="MarDV"/>
+			 <h:inputHidden value="#{marks.marTOC}" type="text" name="MarTOC" id="MarTOC"/>
+			 <h:inputHidden value="#{marks.marMPI}" type="text" name="MarMPI" id="MarMPI"/>
+			 <h:inputHidden value="#{marks.marADJ}" type="text" name="MarADJ" id="MarADJ"/>
+
+			 <div class="container"> 
+			 	<h:commandButton action="grade" type="submit" value="Submit" />
+			 	<h:commandButton type="reset" value="Reset" />
+			 </div> 
+		 </div> 
+	</h:form>
+
+</body>
+
+</html>
