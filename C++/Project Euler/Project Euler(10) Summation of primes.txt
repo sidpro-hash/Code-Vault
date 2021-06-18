@@ -1,0 +1,53 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+void SieveOfEratosthenes(long long int n,long long int arr[]) 
+{ 
+    // Create a boolean array "prime[0..n]" and initialize 
+    // all entries it as true. A value in prime[i] will 
+    // finally be false if i is Not a prime, else true. 
+    bool prime[n+1]; 
+    memset(prime, true, sizeof(prime)); 
+  
+    for (long long int p=2; p*p<=n; p++) 
+    { 
+        // If prime[p] is not changed, then it is a prime 
+        if (prime[p] == true) 
+        { 
+            // Update all multiples of p greater than or  
+            // equal to the square of it 
+            // numbers which are multiple of p and are 
+            // less than p^2 are already been marked.  
+            for (long long int i=p*p; i<=n; i += p) 
+                prime[i] = false; 
+        } 
+    } 
+  
+    // Print all prime numbers
+    arr[0]=0;
+    arr[1]=0;
+    //cout<<0<<":"<<arr[0]<<" ";
+    //cout<<1<<":"<<arr[1]<<" "; 
+    for (long long int p=2; p<=n; p++){
+            arr[p] = arr[p-1];    
+       if (prime[p]){
+           arr[p] += p;
+       } 
+       //cout<<p<<":"<<arr[p]<<" "; 
+    }      
+} 
+
+int main(){
+    int t;
+    cin >> t;
+    long long int arr[1000001];
+    SieveOfEratosthenes(1000000,arr);
+    for(int a0 = 0; a0 < t; a0++){
+        int n;
+        cin >> n;
+        cout<<arr[n]<<endl;
+    }
+    return 0;
+}

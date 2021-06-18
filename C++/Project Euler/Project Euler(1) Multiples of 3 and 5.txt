@@ -1,0 +1,72 @@
+Rather than using range/loop based solutions you may wish to leverage more math than brute force.
+There is a simple way to get the sum of multiples of a number, less than a number.
+
+For instance, the sum of multiples of 3 up to 1000 are: 3 + 6 + 9 + ... + 999 Which can be rewritten as: 3* ( 1 + 2 + 3 + ... + 333)
+
+There is a simple way to sum up all numbers 1-N:
+						Sum(1,N) = N*(N+1)/2
+So a sample function would be
+unsigned int unitSum(unsigned int n)
+{
+    return (n*(n+1))/2;
+}
+
+So now getting all multiples of 3 less than 1000 (aka up to and including 999) has been reduced to:
+3*unitSum((int)(999/3))
+
+You can do the same for multiples of 5:
+5*unitSum((int)(999/5))
+
+But there is a caveat! Both of these count multiples of both such as 15, 30, etc It counts them twice, one for each. So in order to balance that out, you subtract once.
+15*unitSum((int)(999/15))
+
+So in total, the equation is:
+sum = 3*unitSum((int)(999/3)) + 5*unitSum((int)(999/5)) - 15*unitSum((int)(999/15))
+
+So now rather than looping over a large set of numbers, and doing comparisons, you are just doing some simple multiplication!
+---------------------------------------------------------------------------------------------------------------------------------
+#include <map>
+#include <set>
+#include <list>
+#include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
+
+using namespace std;
+
+
+int main(){
+    int t;
+    cin >> t;
+    for(int a0 = 0; a0 < t; a0++){
+        int n;
+        long sum1 = 0,sum2 = 0,sum3 = 0;
+        cin >> n;
+        long r3 = (n-1)/3;
+        long r5 = (n-1)/5;
+        long r15 = (n-1)/15;
+        sum1 += (3*(r3*(r3 + 1)/2));
+        sum2 += (5*(r5*(r5 + 1)/2));
+        sum3 += (15*(r15*(r15 + 1)/2));
+        cout<<(sum1 + sum2 - sum3)<<endl;
+    }
+    return 0;
+}
+
+

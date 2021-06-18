@@ -1,0 +1,58 @@
+#include <map>
+#include <set>
+#include <list>
+#include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
+
+using namespace std;
+
+bool isPrime(int n){ 
+    // Corner cases 
+    if (n <= 1) 
+        return false; 
+    if (n <= 3) 
+        return true; 
+  
+    // This is checked so that we can skip 
+    // middle five numbers in below loop 
+    if (n % 2 == 0 || n % 3 == 0) 
+        return false; 
+  
+    for (int i = 5; i * i <= n; i = i + 6) 
+        if (n % i == 0 || n % (i + 2) == 0) 
+            return false; 
+  
+    return true; 
+} 
+
+int main(){
+    int t;
+    cin >> t;
+    vector<int> v;
+    for(int i=1;v.size()<=10000;++i){
+        if(isPrime(i))v.push_back(i);
+    }
+    for(int a0 = 0; a0 < t; a0++){
+        int n;
+        cin >> n;
+        cout<<v[n - 1]<<endl;
+    }
+    return 0;
+}

@@ -1,0 +1,90 @@
+a^2 + b^2 = c^2  ____eq(1).
+a + b + c = n    ____eq(2).
+
+From eq(2) we get:
+	c = n - a - b
+Substituitng this value of c in eq(1):
+	a^2 + b^2 = (n - a - b)^2
+	a^2 + b^2 = n^2 + (a+b)^2 - 2n(a+b)
+ 	a^2 + b^2 = n^2 + a^2 + b^2 + 2ab - 2an - 2bn
+ 	a^2 - (a - n)^2 = b(2a - 2n)
+	b = a^2 - (a - n)^2/2(a - n)
+
+
+N must be a multiple of 2 to satisfy pythagorean triplets
+Proof
+a+b+c = N ___eq(1)
+(a+b+c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca ___eq(2)
+a^2 + b^2 = c^2 ___eq(3)
+solving 1,2 and 3 we get..
+
+N^2 = 2(c^2) + 2(ab +bc+ca) ___eq(4)
+
+This implies N^2 is a multiple of 2
+This further implies N is a multiple of 2
+This rejects most of the cases!!!
+Limit of a can be reduced!
+Proof
+a < b ___eq(5)
+a < c ___eq(6)
+add eq(5) and eq(6)
+2a < b + c;
+add a to both sides
+3a < a+b+c
+3a < N
+a < N/3
+----------------------------------------------------------
+
+#include <map>
+#include <set>
+#include <list>
+#include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
+
+using namespace std;
+
+
+int main(){
+    int t;
+    cin >> t;
+    for(int a0 = 0; a0 < t; a0++){
+        int n;
+        cin >> n;
+        long long int sum = -1;
+        int j = n/3;
+        int a,b,i,c;
+        for(a = 3;a<=j;++a){
+            i = a-n;
+            b = (a*a - i*i)/(2*i);
+            c = n - a - b;
+            if((a*a + b*b) == (c*c)){
+                sum = sum>(a*b*c)?sum:(a*b*c);
+            }
+        }
+        cout<<sum<<endl;
+    }
+    return 0;
+}
+
+
+
+
+
+

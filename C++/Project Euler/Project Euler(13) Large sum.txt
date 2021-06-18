@@ -1,0 +1,40 @@
+Work out the first ten digits of the sum of N 50-digit numbers.
+
+Input Format
+
+First line contains N, next
+lines contain a 50 digit number each.
+
+Constraints
+1<=N<=1000
+Output Format
+Print only first 10 digit of the final sum
+
+Sample Input
+
+5
+37107287533902102798797998220837590246510135740250
+46376937677490009712648124896970078050417018260538
+74324986199524741059474233309513058123726617309629
+91942213363574161572522430563301811072406154908250
+23067588207539346171171980310421047513778063246676
+----------------------------------------------------------------
+import java.io.*;
+import java.util.*;
+import java.math.BigInteger;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        BigInteger l1,l2,l3;
+        l1 = BigInteger.ZERO;
+        for(int i=0;i<n;++i){
+            l2 = scan.nextBigInteger();
+            l1 = l1.add(l2);
+        }
+        System.out.println(l1.toString().substring(0,10));
+    }
+}

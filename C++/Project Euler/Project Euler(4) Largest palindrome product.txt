@@ -1,0 +1,62 @@
+Simply find all palindrome multiples of two 3 digit numbers. Store these in a list and sort.
+
+Use binary search to return the number just less than given 
+-------------------------------------------------------------------
+#include <map>
+#include <set>
+#include <list>
+#include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
+
+using namespace std;
+
+
+int main(){
+    int t;
+    cin >> t;
+    vector<long> v;
+    for(int i=100;i<=999;++i){
+        for(int j=100;j<=999;++j){
+           string a = to_string(i*j);
+           bool home = true;
+           int l = a.length();
+           for(int k=0;k<l/2;k++){
+               if(a[k]!=a[l-k-1]){
+                   home=false;
+                   break;
+               }
+           }
+           if(home)v.push_back(i*j); 
+        }
+    }
+    sort(v.begin(),v.end());
+    int size = v.size();
+    for(int a0 = 0; a0 < t; a0++){
+        int n;
+        cin >> n;
+        for(int i=size-1;i>=0;--i){
+            if(v[i]<n){
+                cout<<v[i]<<endl;
+                break;
+            }
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,82 @@
+First we generate all the fibonacci numbers and store the even fibonacci numbers in a list. We will get some 28 numbers as
+
+0
+2
+8
+34
+144
+610
+2584
+10946
+46368
+196418
+832040
+3524578
+14930352
+63245986
+267914296
+1134903170
+4807526976
+20365011074
+86267571272
+365435296162
+1548008755920
+6557470319842
+27777890035288
+117669030460994
+498454011879264
+2111485077978050
+8944394323791464
+37889062373143906
+
+Second step is to calculate sum till the given N. Hence for each query you are summing<=28 numbers. 
+-------------------------------------------------------------------------------------------------------
+#include <map>
+#include <set>
+#include <list>
+#include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
+
+using namespace std;
+
+
+int main(){
+    int t;
+    vector<long> v;
+    long c=0,a=0,b=1;
+    while(c<40000000000000000){
+        if(c%2==0)v.push_back(c);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    cin >> t;
+    for(int a0 = 0; a0 < t; a0++){
+        long n,i;
+        cin >> n;
+        long sum = 0;
+        for(i=0;i<28;++i){
+            if(v[i]>n)break;
+            sum+=v[i];
+        }
+        cout<<sum<<endl;
+    }
+    return 0;
+}
