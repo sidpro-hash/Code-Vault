@@ -10,8 +10,10 @@
 6. [0-1 Knapsack Problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Knapsack_01.cpp)
 7. [Fractional Knapsack Problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Knapsack_Fractional.cpp)
 8. [C++ Implementation of Apriori Algorithm](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Apriori/apriori.cpp)
-
-![Apriori output](/images/Apriori.png)
+9. [Ceaser Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Caesar%20Cipher.cpp)
+10. [Monoalphabetic Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Monoalphabetic%20Cipher.cpp)
+11. [Polyalphabetic Cipher(Vigenere Cipher) encryption and decryption processes](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Vigenere%20Cipher.cpp)
+12. [Play fair Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Playfair%20Cipher.cpp)
 
 ### JDBC Programs (Oracle 11g database)
 
