@@ -1,3 +1,9 @@
+/*
+ *
+ * @author SidPro
+ * @version 1.0
+ *
+ */
 import java.util.Scanner;
 import java.io.*;
 class Remove_Replace_text{

@@ -1,4 +1,8 @@
 /*
+ *
+ * @author SidPro
+ * @version 1.0
+ *
  *        **** Number: the Rational class ****
  *
  * # Two long data fields named numerator and denominator for rational number. 

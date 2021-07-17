@@ -1,5 +1,9 @@
 
 /*
+ *
+ * @author SidPro
+ * @version 1.0
+ *
  *       **** CheckSudokuSolution class ****
  *
  * # The problem is to check whether a given Sudoku solution is correct.

@@ -1,4 +1,8 @@
 /*
+ *
+ * @author SidPro
+ * @version 1.0
+ *
  *        **** Financial: credit card number validation class ****
  *
  * # A method isValid(int[] number) that returns true if the specified

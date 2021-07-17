@@ -1,3 +1,10 @@
+/*
+ *
+ * @author SidPro
+ * @version 1.0
+ *
+ */
+
 import java.util.Scanner;
 class TestStopWatch{
 	public static void main(String []args){

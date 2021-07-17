@@ -1,5 +1,9 @@
 
 /*
+ *
+ * @author SidPro
+ * @version 1.0
+ *
  * # Do you know on which day you were born?If your friend's birthday is February 24th,
  *   what day of the week does it fall in year?you can answer these questions with
  *   a quick reference to an online calendar,But if you wanted to calculate this by hand,
