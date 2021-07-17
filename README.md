@@ -11,12 +11,15 @@
 7. [Hamming code detecting up to two simultaneous bit errors and correcting single-bit errors.](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/HammingCode.cpp)
 8. [Implementation of Apriori Algorithm](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Apriori/apriori.cpp)
 9. [Implementation of Binary Tree](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Tree.cpp)
-10. [Implementation of MinHeap](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/MinHeap.cpp)
-11. [Monoalphabetic Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Monoalphabetic%20Cipher.cpp)
-12. [Play fair Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Playfair%20Cipher.cpp)
-13. [Polyalphabetic Cipher(Vigenere Cipher) encryption and decryption processes](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Vigenere%20Cipher.cpp)
-14. [Rod cutting problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Rodcut.cpp)
-15. [Two-dimensional Parity check](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/parity.cpp)
+10. [Implementation doubly linked list](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/DoublyList.cpp)
+11. [Implementation of MinHeap](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/MinHeap.cpp)
+12. [Monoalphabetic Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Monoalphabetic%20Cipher.cpp)
+13. [Max Subarray Sum using Kadane's Algorithm ](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Kadane's%20Algorithm%20.cpp)
+14. [Play fair Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Playfair%20Cipher.cpp)
+15. [Polyalphabetic Cipher(Vigenere Cipher) encryption and decryption processes](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Vigenere%20Cipher.cpp)
+16. [Print Binary number from 1 to N](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Generate%20Binary%20Numbers.cpp)
+17. [Rod cutting problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Rodcut.cpp)
+18. [Two-dimensional Parity check](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/parity.cpp)
 
 ### JAVA
 
