@@ -18,6 +18,19 @@
 14. [Rod cutting problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Rodcut.cpp)
 15. [Two-dimensional Parity check](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/parity.cpp)
 
+### JAVA
+
+1. [Addition of digits stored in two linked list](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Programs/AddTwoNumbers.java)
+2. [Credit card number validator](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Programs/CreditCardValiator.java)
+3. [Count word, character and line in given input file](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Programs/Count_Word_Char_line_inFile.java)
+4. [File directory manipulation](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Programs/Practice_derectory.java)
+5. [Find All Permutation of given string](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Programs/Testextension.java)
+6. [Rational number class implementation](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Programs/Rational.java)
+7. [Remove and Replace text in file](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Programs/Remove_Replace_text.java)
+8. [SudokuSolution : check whether a given Sudoku solution is correct](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Programs/SudokuValidator.java)
+9. [StopWatch to getElapsedTime of program](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Programs/TestStopWatch.java)
+10. [Zeller_algorithm to find day of the week](https://github.com/sidpro-hash/Code-Vault/blob/main/Java%20Programs/Zeller_algo.java)
+
 ### JDBC Programs (Oracle 11g database)
 
 1. [Create an application to fill student registration form and submit data into table of Oracle. (use JDBC)](https://github.com/sidpro-hash/Code-Vault/blob/main/JDBC%20Programs%20(Oracle%2011g%20database)/Student_Reg.java)
