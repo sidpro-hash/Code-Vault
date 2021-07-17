@@ -1,7 +1,7 @@
-Kadane's Algorithm 
+//Kadane's Algorithm 
 
-Expected Time Complexity: O(N)
-Expected Auxiliary Space: O(1)
+//Expected Time Complexity: O(N)
+//Expected Auxiliary Space: O(1)
 
 int maxSubarraySum(int arr[], int n){
         
