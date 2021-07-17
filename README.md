@@ -2,19 +2,21 @@
 
 ### C++
 
-1. [Cyclic Redundancy Check (CRC)](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/CRCparity.cpp)
-2. [Hamming code detecting up to two simultaneous bit errors and correcting single-bit errors.](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/HammingCode.cpp)
-3. [Two-dimensional Parity check](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/parity.cpp)
-4. [Rod cutting problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Rodcut.cpp)
-5. [Coin change problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Coinchange.cpp)
-6. [0-1 Knapsack Problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Knapsack_01.cpp)
-7. [Fractional Knapsack Problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Knapsack_Fractional.cpp)
-8. [C++ Implementation of Apriori Algorithm](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Apriori/apriori.cpp)
-9. [Ceaser Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Caesar%20Cipher.cpp)
-10. [Monoalphabetic Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Monoalphabetic%20Cipher.cpp)
-11. [Polyalphabetic Cipher(Vigenere Cipher) encryption and decryption processes](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Vigenere%20Cipher.cpp)
+1. [0-1 Knapsack Problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Knapsack_01.cpp)
+2. [Ceaser Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Caesar%20Cipher.cpp)
+3. [Coin change problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Coinchange.cpp)
+4. [Cyclic Redundancy Check (CRC)](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/CRCparity.cpp)
+5. [Fast GCD](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/GCD.cpp)
+6. [Fractional Knapsack Problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Knapsack_Fractional.cpp)
+7. [Hamming code detecting up to two simultaneous bit errors and correcting single-bit errors.](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/HammingCode.cpp)
+8. [Implementation of Apriori Algorithm](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Apriori/apriori.cpp)
+9. [Implementation of Binary Tree](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Tree.cpp)
+10. [Implementation of MinHeap](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/MinHeap.cpp)
+11. [Monoalphabetic Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Monoalphabetic%20Cipher.cpp)
 12. [Play fair Cipher encryption and decryption](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Playfair%20Cipher.cpp)
-13. [Fast GCD](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/GCD.cpp)
+13. [Polyalphabetic Cipher(Vigenere Cipher) encryption and decryption processes](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Vigenere%20Cipher.cpp)
+14. [Rod cutting problem](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/Rodcut.cpp)
+15. [Two-dimensional Parity check](https://github.com/sidpro-hash/Code-Vault/blob/main/C%2B%2B/parity.cpp)
 
 ### JDBC Programs (Oracle 11g database)
 
