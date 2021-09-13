@@ -22,7 +22,8 @@
  *
  * Enter Data to generate CRC: 110100101
    Enter Key: 1101
-
+q: 100000110
+r: 110
 CRC code: 110100101110
  0 0 0
  */
@@ -52,14 +53,16 @@ tuple<string,string> sender(string data,string keys){
 	int range = lOfData+lOfKey-1;
 	char operation[range],temp[lOfKey];
 
-	data.copy(operation,lOfData,0);
-	for(i=lOfData;i<range+1;++i)operation[i] = '0';
+	data.copy(operation,lOfData,0);//copy data into operation
+	for(i=lOfData;i<range+1;++i)operation[i] = '0'; // rest assign with 0
 //	for(i=0;i<range;++i)cout<<operation[i];
 
 	for(j=0;j<lOfKey;++j){
 		temp[j] = operation[j];
 	}
+	cout<<"q: ";
 	for(i=0;i<lOfData;++i){
+	    cout<<temp[0];
 		if(temp[0]=='1'){
 			for(j=0;j<lOfKey;++j){
 				if((temp[j]=='0'&&keys[j]=='0')||(temp[j]=='1'&&keys[j]=='1')){
@@ -89,8 +92,10 @@ tuple<string,string> sender(string data,string keys){
 //		cout<<"\n"<<i<<" ";
 //		for(j=0;j<lOfKey;++j)cout<<temp[j];
 	}
+	cout<<"\nr: ";
 	for(j=0;j<lOfKey-1;++j){
 		data = data+temp[j];
+		cout<<temp[j];
 	}
 	cout<<"\n"<<"CRC code: "<<data;
 	return make_tuple(data,keys);
